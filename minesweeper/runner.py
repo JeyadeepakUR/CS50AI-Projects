@@ -19,7 +19,7 @@ size = width, height = 600, 400
 screen = pygame.display.set_mode(size)
 
 # Fonts
-OPEN_SANS = "E:/Intro to AI/Projects/minesweeper/assets/fonts/OpenSans-Regular.ttf"
+OPEN_SANS = "./assets/fonts/OpenSans-Regular.ttf"
 ##OPEN_SANS = "assets/fonts/OpenSans-Regular.ttf"
 smallFont = pygame.font.Font(OPEN_SANS, 20)
 mediumFont = pygame.font.Font(OPEN_SANS, 28)
@@ -33,9 +33,9 @@ cell_size = int(min(board_width / WIDTH, board_height / HEIGHT))
 board_origin = (BOARD_PADDING, BOARD_PADDING)
 
 # Add images
-flag = pygame.image.load("E:/Intro to AI/Projects/minesweeper/assets/images/flag.png")
+flag = pygame.image.load("./assets/images/flag.png")
 flag = pygame.transform.scale(flag, (cell_size, cell_size))
-mine = pygame.image.load("E:/Intro to AI/Projects/minesweeper/assets/images/mine.png")
+mine = pygame.image.load("./assets/images/mine.png")
 mine = pygame.transform.scale(mine, (cell_size, cell_size))
 
 # Create game and AI agent
